@@ -31,3 +31,8 @@ O sistema valida restrições rígidas para assegurar a integridade do ciclo:
 8. Depois de concluída a centrifugação, a máquina **pode ser desligada**.
 9. Uma máquina que já está ligada **não deve ser ligada** novamente.
 10. Uma máquina que já está desligada **não deve ser desligada** novamente.
+
+## 5. Diagrama
+
+<span>
+<img width="253" height="529" alt="Image" src="https://github.com/user-attachments/assets/753e854a-9519-41ce-bca2-a7a3d7125c6d" />
