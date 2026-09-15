@@ -1,6 +1,6 @@
 # Simulador de Máquina de Lavar em Java (Controle de Estados)
 
-## Maria Luiza e Mariana Borges Fanhani
+## Maria Luiza Silva e Silva e Mariana Borges Fanhani
   
 ## 1. Descrição do Projeto
 Este projeto foi desenvolvido em **Java** para modelar e controlar o funcionamento de uma máquina de lavar roupas baseada em uma máquina de estados finitos. O sistema gerencia rigorosamente as operações permitidas de acordo com o estado atual da máquina e as condições físicas simuladas, como a abertura ou o fechamento da tampa.
