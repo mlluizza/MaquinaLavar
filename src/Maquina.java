@@ -41,6 +41,25 @@ public class Maquina {
         }
     }
 
+    public void abrirTampa() {
+        if(estado == Estado.CENTRIFUGANDO || estado == Estado.LAVANDO) {
+            System.out.println("Não é possível abrir a tampa enquanto ela estiver centrifugando ou lavand");
+        }else{
+            tampaFechada = true;
+            System.out.println(" A tampa foi aberta");
+        }
+    }
+
+    public void fecharTampa() {
+        if (!tampaFechada) {
+            tampaFechada = true;
+            System.out.println("A tampa foi fechada.");
+        } else {
+            System.out.println("A tampa já está fechada.");
+        }
+    }
+
+
 
     public enum Estado {
         DESLIGADA,
