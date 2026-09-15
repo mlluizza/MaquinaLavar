@@ -6,5 +6,6 @@ public class Estado {
         maquina.ligar();
         maquina.desligar();
         maquina.desligar();
+        maquina.lavar();
     }
 }

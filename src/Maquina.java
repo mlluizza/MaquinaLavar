@@ -26,6 +26,21 @@ public class Maquina {
         }
     }
 
+    public void lavar(){
+        if (estado == Estado.DESLIGADA){
+            System.out.println("Não é possível lavar com a máquina desligada");
+        }
+        else if (!tampaFechada){
+            System.out.println("Não é possível lavar com a tampa aberta");
+            return;
+        } else if (estado == Estado.LAVANDO) {
+            System.out.println("A máquina já está lavando");
+        }else{
+            estado = Estado.LAVANDO;
+            System.out.println("A máquina começou a lavar");
+        }
+    }
+
 
     public enum Estado {
         DESLIGADA,
