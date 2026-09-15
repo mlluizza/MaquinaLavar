@@ -4,5 +4,7 @@ public class Estado {
 
         maquina.ligar();
         maquina.ligar();
+        maquina.desligar();
+        maquina.desligar();
     }
 }
