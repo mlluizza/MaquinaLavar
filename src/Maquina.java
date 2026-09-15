@@ -59,6 +59,36 @@ public class Maquina {
         }
     }
 
+    public void pausarLavagem() {
+        if (estado == Estado.DESLIGADA) {
+            System.out.println("Não é possível pausar uma máquina desligada.");
+            return;
+        }
+        else if (estado == Estado.CENTRIFUGANDO) {
+            System.out.println("Não dá para pausar enquanto a máquina estiver centrifugando.");
+            return;
+        }
+        else if (estado == Estado.PAUSADA) {
+            System.out.println("A máquina já está pausada.");
+        }
+        else {
+            estado = Estado.PAUSADA;
+            System.out.println("A máquina foi pausada.");
+        }
+    }
+
+    public void retomarLavagem() {
+        if (estado == Estado.DESLIGADA) {
+            System.out.println("Não é possível retomar a lavagem com a máquina desligada.");
+        }
+        else if (estado == Estado.PAUSADA) {
+            estado = Estado.LAVANDO;
+            System.out.println("Retomando a lavagem.");
+        }
+        else {
+            System.out.println("A máquina não está pausada.");
+        }
+    }
 
 
     public enum Estado {
@@ -66,7 +96,9 @@ public class Maquina {
         LIGADA,
         CENTRIFUGANDO,
         LAVANDO,
-        CENTRIFUGACAOCONCLUIDA
+        CENTRIFUGACAOCONCLUIDA,
+        PAUSADA
+
     }
 
 
